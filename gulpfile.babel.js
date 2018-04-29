@@ -12,7 +12,7 @@ import uglify from 'uglify-js';
 import browserSync from 'browser-sync';
 const browser = browserSync.create();
 gulp.task('transform',()=>{
-   gulp.src(['es6/**/*'])
+   gulp.src(['es6/index.js'])
     //    .pipe(babel())
        .pipe(trans({isMod:true}))
        .on('error',function(){
@@ -26,9 +26,9 @@ gulp.task('transform',()=>{
 })
 gulp.task('refreshBrowser',()=>{
     browser.init({
-        proxy:'http://172.30.5.31:8080/efoods.github.io/',
+        proxy:'http://172.30.5.31/',
         browser:'chrome',
-        port:8080
+        port:80
     })
 })
 gulp.task('watch',()=>{
@@ -37,18 +37,18 @@ gulp.task('watch',()=>{
            browser.reload();
            console.log(e.path + ' '+new Date); 
         });
-    gulp.watch('./mod-load.js',(e)=>{
-        try{
-            gulp.src(e.path)
-                .pipe(trans({isMod:false}))
-                .pipe(rename('load.js'))
-                .pipe(gulp.dest('./'))
-        }catch(e){
+    // gulp.watch('./mod-load.js',(e)=>{
+    //     try{
+    //         gulp.src(e.path)
+    //             .pipe(trans({isMod:false}))
+    //             .pipe(rename('load.js'))
+    //             .pipe(gulp.dest('./'))
+    //     }catch(e){
             
-        }
-    }).on('change',(e)=>{
-        console.log(e.path + ' '+new Date); 
-     });
+    //     }
+    // }).on('change',(e)=>{
+    //     console.log(e.path + ' '+new Date); 
+    //  });
 })
 gulp.task('DEBUG',['transform','refreshBrowser','watch']);
 gulp.task('test',()=>{

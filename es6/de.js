@@ -48,6 +48,5 @@ class dataTransfom {
             }
         }
     }
-    
 }
 export default dataTransfom;

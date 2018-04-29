@@ -11296,11 +11296,14 @@ $_$0000000000:function(require){
         });
     })()
     return module.exports;
-},entry:"$_$0000000002",
-$_$0000000002:function(require){
+},$_$0000000002:function(require){
     var module = { exports:{} },  exports = module.exports;
     (function(){
                 "use strict";
+        
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
         
         var _createClass = function() {
             function n(e, t) {
@@ -11323,9 +11326,184 @@ $_$0000000002:function(require){
         
         var _react2 = _interopRequireDefault(_react);
         
+        function _interopRequireDefault(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            };
+        }
+        
+        function _classCallCheck(e, t) {
+            if (!(e instanceof t)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+        
+        function _possibleConstructorReturn(e, t) {
+            if (!e) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return t && (typeof t === "object" || typeof t === "function") ? t : e;
+        }
+        
+        function _inherits(e, t) {
+            if (typeof t !== "function" && t !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+            }
+            e.prototype = Object.create(t && t.prototype, {
+                constructor: {
+                    value: e,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (t) Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t;
+        }
+        
+        var _class = function(e) {
+            _inherits(t, e);
+            function t(e) {
+                _classCallCheck(this, t);
+                return _possibleConstructorReturn(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
+            }
+            _createClass(t, [ {
+                key: "render",
+                value: function e() {
+                    return _react2.default.createElement("div", {
+                        className: "h-tag"
+                    }, "HOME SET");
+                }
+            } ]);
+            return t;
+        }(_react2.default.Component);
+        
+        exports.default = _class;
+    })()
+    return module.exports;
+},$_$0000000003:function(require){
+    var module = { exports:{} },  exports = module.exports;
+    (function(){
+                "use strict";
+        
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+        
+        var _createClass = function() {
+            function n(e, t) {
+                for (var r = 0; r < t.length; r++) {
+                    var n = t[r];
+                    n.enumerable = n.enumerable || false;
+                    n.configurable = true;
+                    if ("value" in n) n.writable = true;
+                    Object.defineProperty(e, n.key, n);
+                }
+            }
+            return function(e, t, r) {
+                if (t) n(e.prototype, t);
+                if (r) n(e, r);
+                return e;
+            };
+        }();
+        
+        var _react = require("$_$0000000000");
+        
+        var _react2 = _interopRequireDefault(_react);
+        
+        var _tag = require("$_$0000000002");
+        
+        var _tag2 = _interopRequireDefault(_tag);
+        
+        function _interopRequireDefault(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            };
+        }
+        
+        function _classCallCheck(e, t) {
+            if (!(e instanceof t)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+        
+        function _possibleConstructorReturn(e, t) {
+            if (!e) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return t && (typeof t === "object" || typeof t === "function") ? t : e;
+        }
+        
+        function _inherits(e, t) {
+            if (typeof t !== "function" && t !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+            }
+            e.prototype = Object.create(t && t.prototype, {
+                constructor: {
+                    value: e,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (t) Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t;
+        }
+        
+        var APP = function(e) {
+            _inherits(t, e);
+            function t(e) {
+                _classCallCheck(this, t);
+                return _possibleConstructorReturn(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
+            }
+            _createClass(t, [ {
+                key: "render",
+                value: function e() {
+                    return _react2.default.createElement("div", {
+                        id: "app"
+                    }, _react2.default.createElement(_tag2.default, null), _react2.default.createElement("img", {
+                        src: "../../imgs/pic7.jpg"
+                    }));
+                }
+            } ]);
+            return t;
+        }(_react2.default.Component);
+        
+        exports.default = APP;
+    })()
+    return module.exports;
+},entry:"$_$0000000004",
+$_$0000000004:function(require){
+    var module = { exports:{} },  exports = module.exports;
+    (function(){
+                "use strict";
+        
+        var _createClass = function() {
+            function o(e, t) {
+                for (var r = 0; r < t.length; r++) {
+                    var o = t[r];
+                    o.enumerable = o.enumerable || false;
+                    o.configurable = true;
+                    if ("value" in o) o.writable = true;
+                    Object.defineProperty(e, o.key, o);
+                }
+            }
+            return function(e, t, r) {
+                if (t) o(e.prototype, t);
+                if (r) o(e, r);
+                return e;
+            };
+        }();
+        
+        var _react = require("$_$0000000000");
+        
+        var _react2 = _interopRequireDefault(_react);
+        
         var _reactDom = require("$_$0000000001");
         
         var _reactDom2 = _interopRequireDefault(_reactDom);
+        
+        var _layout = require("$_$0000000003");
+        
+        var _layout2 = _interopRequireDefault(_layout);
         
         function _interopRequireDefault(e) {
             return e && e.__esModule ? e : {
@@ -11374,14 +11552,14 @@ $_$0000000002:function(require){
                 key: "render",
                 value: function e() {
                     return _react2.default.createElement("div", {
-                        id: "app"
+                        className: "app"
                     }, _react2.default.createElement("video", {
                         className: "AppBgVideo",
                         src: this.props.src,
                         autoPlay: true,
                         loop: true,
                         poster: this.props.poster
-                    }), this.children);
+                    }), _react2.default.createElement(_layout2.default, null));
                 }
             }, {
                 key: "onclick",
