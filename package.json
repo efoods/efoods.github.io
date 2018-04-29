@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-remove-strict-mode": "^0.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.23.7",
+    "gulp-concat": "^2.6.1",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglify-js": "^0.0.4",
+    "jquery": "^3.3.1",
+    "koa": "^2.5.0",
+    "koa-route": "^3.2.0",
+    "nunjucks": "^3.1.2",
+    "through": "^2.3.8",
+    "through2": "^2.0.3",
+    "uglify-js": "^3.3.21"
+  },
+  "name": "gulp-babel-react",
+  "version": "1.0.0",
+  "description": "this is a js ",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "victor",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "babel"
+  ]
+}
