@@ -1,5 +1,5 @@
 import gulp from 'gulp';
-import babel from 'gulp-babel';
+// import babel from 'gulp-babel';
 // import uglify from 'gulp-uglify';
 import trans from './transform';
 import pack from './pack';
@@ -26,7 +26,7 @@ gulp.task('transform',()=>{
 })
 gulp.task('refreshBrowser',()=>{
     browser.init({
-        proxy:'http://172.30.5.31:8080/babel/',
+        proxy:'http://172.30.5.31:8080/efoods.github.io/',
         browser:'chrome',
         port:8080
     })

@@ -31,5 +31,8 @@
   "keywords": [
     "react",
     "babel"
-  ]
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
