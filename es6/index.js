@@ -19,4 +19,4 @@ class A extends React.Component{
 		
 }
 }
-ReactDOM.render(<A src="./media/bg1.mp4" poster="./imgs/pic7.jpg" ></A>,document.getElementById('mainBox'))
+ReactDOM.render(<A src="./media/bg1.webm" poster="./imgs/pic7.jpg" ></A>,document.getElementById('mainBox'))

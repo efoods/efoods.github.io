@@ -7,7 +7,7 @@ html,body,#mainBox,.app{
     height:100%;
 }
 #mainBox{
-    background-color: #32e689
+    background-color: #000000;
 }
 .app{
     position: relative;

@@ -11569,7 +11569,7 @@ $_$0000000004:function(require){
         }(_react2.default.Component);
         
         _reactDom2.default.render(_react2.default.createElement(A, {
-            src: "./media/bg1.mp4",
+            src: "./media/bg1.webm",
             poster: "./imgs/pic7.jpg"
         }), document.getElementById("mainBox"));
     })()
