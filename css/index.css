@@ -2,9 +2,31 @@
     margin:0;
     padding:0;
 }
+
+dd.p-card-desc {
+    color: #b3b3b3;
+    padding-top: 5px;
+}
+
+dl.p-card {
+    display:  inline-block;
+    width:  auto;
+    height:  auto;
+    padding: 10px;
+    background: #4e4e4e;
+    border-radius: 4px;
+    transition-duration: 1000ms;
+    animation-iteration-count:  initial;
+    transform: scale(0.7);
+    opacity: 0.8;
+}
+
+dl.p-card:hover {
+    transform: scale(1);
+}
 html,body,#mainBox,.app{
     width:100%;
-    height:100%;
+    height: 100%;
 }
 #mainBox{
     background-color: #000000;
@@ -25,6 +47,8 @@ html,body,#mainBox,.app{
     left:0;
     right:0;
     bottom:0;
+    opacity: 1;
+    overflow: auto;
 }
 .h-tag{
     position: absolute;
@@ -37,4 +61,11 @@ html,body,#mainBox,.app{
     width: 234px;
     height: 21px;
     color: white;
+    z-index: 9999;
+}
+img.p-card-img {
+    width: 300px;
+    height: 260px;
+    background: #fff;
+    border-radius: 2px;
 }

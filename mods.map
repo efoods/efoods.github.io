@@ -1,5 +1,6 @@
 [{"id":"$_$0000000000","name":"coms/react.js"},
 {"id":"$_$0000000001","name":"coms/react-dom.js"},
 {"id":"$_$0000000002","name":"es6/parts/tag.js"},
-{"id":"$_$0000000003","name":"es6/layout.js"},
-{"id":"$_$0000000004","name":"es6/index.js"}]
+{"id":"$_$0000000003","name":"es6/parts/card.js"},
+{"id":"$_$0000000004","name":"es6/layout.js"},
+{"id":"$_$0000000005","name":"es6/index.js"}]

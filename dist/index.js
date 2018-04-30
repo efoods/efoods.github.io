@@ -11390,18 +11390,109 @@ $_$0000000000:function(require){
         });
         
         var _createClass = function() {
-            function n(e, t) {
+            function a(e, t) {
                 for (var r = 0; r < t.length; r++) {
-                    var n = t[r];
-                    n.enumerable = n.enumerable || false;
-                    n.configurable = true;
-                    if ("value" in n) n.writable = true;
-                    Object.defineProperty(e, n.key, n);
+                    var a = t[r];
+                    a.enumerable = a.enumerable || false;
+                    a.configurable = true;
+                    if ("value" in a) a.writable = true;
+                    Object.defineProperty(e, a.key, a);
                 }
             }
             return function(e, t, r) {
-                if (t) n(e.prototype, t);
-                if (r) n(e, r);
+                if (t) a(e.prototype, t);
+                if (r) a(e, r);
+                return e;
+            };
+        }();
+        
+        var _react = require("$_$0000000000");
+        
+        var _react2 = _interopRequireDefault(_react);
+        
+        function _interopRequireDefault(e) {
+            return e && e.__esModule ? e : {
+                default: e
+            };
+        }
+        
+        function _classCallCheck(e, t) {
+            if (!(e instanceof t)) {
+                throw new TypeError("Cannot call a class as a function");
+            }
+        }
+        
+        function _possibleConstructorReturn(e, t) {
+            if (!e) {
+                throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+            }
+            return t && (typeof t === "object" || typeof t === "function") ? t : e;
+        }
+        
+        function _inherits(e, t) {
+            if (typeof t !== "function" && t !== null) {
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
+            }
+            e.prototype = Object.create(t && t.prototype, {
+                constructor: {
+                    value: e,
+                    enumerable: false,
+                    writable: true,
+                    configurable: true
+                }
+            });
+            if (t) Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t;
+        }
+        
+        var _class = function(e) {
+            _inherits(t, e);
+            function t(e) {
+                _classCallCheck(this, t);
+                return _possibleConstructorReturn(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
+            }
+            _createClass(t, [ {
+                key: "render",
+                value: function e() {
+                    return _react2.default.createElement("dl", {
+                        className: "p-card"
+                    }, _react2.default.createElement("dt", {
+                        className: "p-card-img-con"
+                    }, _react2.default.createElement("img", {
+                        className: "p-card-img",
+                        src: this.props.imgSrc
+                    })), _react2.default.createElement("dd", {
+                        className: "p-card-desc"
+                    }, "this is a piece text"));
+                }
+            } ]);
+            return t;
+        }(_react2.default.Component);
+        
+        exports.default = _class;
+    })()
+    return module.exports;
+},$_$0000000004:function(require){
+    var module = { exports:{} },  exports = module.exports;
+    (function(){
+                "use strict";
+        
+        Object.defineProperty(exports, "__esModule", {
+            value: true
+        });
+        
+        var _createClass = function() {
+            function a(e, t) {
+                for (var r = 0; r < t.length; r++) {
+                    var a = t[r];
+                    a.enumerable = a.enumerable || false;
+                    a.configurable = true;
+                    if ("value" in a) a.writable = true;
+                    Object.defineProperty(e, a.key, a);
+                }
+            }
+            return function(e, t, r) {
+                if (t) a(e.prototype, t);
+                if (r) a(e, r);
                 return e;
             };
         }();
@@ -11413,6 +11504,10 @@ $_$0000000000:function(require){
         var _tag = require("$_$0000000002");
         
         var _tag2 = _interopRequireDefault(_tag);
+        
+        var _card = require("$_$0000000003");
+        
+        var _card2 = _interopRequireDefault(_card);
         
         function _interopRequireDefault(e) {
             return e && e.__esModule ? e : {
@@ -11459,8 +11554,22 @@ $_$0000000000:function(require){
                 value: function e() {
                     return _react2.default.createElement("div", {
                         id: "app"
-                    }, _react2.default.createElement(_tag2.default, null), _react2.default.createElement("img", {
-                        src: "../../imgs/pic7.jpg"
+                    }, _react2.default.createElement(_tag2.default, null), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic0.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic1.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic2.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic3.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic4.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic5.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic6.jpg"
+                    }), _react2.default.createElement(_card2.default, {
+                        imgSrc: "../../imgs/pic7.jpg"
                     }));
                 }
             } ]);
@@ -11470,8 +11579,8 @@ $_$0000000000:function(require){
         exports.default = APP;
     })()
     return module.exports;
-},entry:"$_$0000000004",
-$_$0000000004:function(require){
+},entry:"$_$0000000005",
+$_$0000000005:function(require){
     var module = { exports:{} },  exports = module.exports;
     (function(){
                 "use strict";
@@ -11501,7 +11610,7 @@ $_$0000000004:function(require){
         
         var _reactDom2 = _interopRequireDefault(_reactDom);
         
-        var _layout = require("$_$0000000003");
+        var _layout = require("$_$0000000004");
         
         var _layout2 = _interopRequireDefault(_layout);
         

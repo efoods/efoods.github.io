@@ -25,16 +25,16 @@ gulp.task('transform',()=>{
        .pipe(gulp.dest('./dist'))
 })
 gulp.task('refreshBrowser',()=>{
-    // browser.init({
-    //     proxy:'http://172.30.5.31/',
-    //     browser:'chrome',
-    //     port:80
-    // })
+    browser.init({
+        proxy:'http://192.168.1.104/',
+        browser:'chrome',
+        port:8031
+    })
 })
 gulp.task('watch',()=>{
     gulp.watch(['es6/**/*'],['transform'])
         .on('change',(e)=>{
-        //    browser.reload();
+           browser.reload();
            console.log(e.path + ' '+new Date); 
         });
     // gulp.watch('./mod-load.js',(e)=>{
